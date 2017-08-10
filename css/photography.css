@@ -33,3 +33,12 @@ img{
    padding: 15px;
  }
 }
+
+#response{
+  display: none;
+  text-align: center;
+}
+
+form{
+  text-align: center;
+}
