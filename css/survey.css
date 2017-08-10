@@ -1,0 +1,23 @@
+#story{
+    display: none;
+    font-size: 35px;
+    color: #6C3483 ; 
+    font-family: Amita;
+}
+
+form{
+    text-align: center;
+    background-color: #E8DAEF;
+    font-size: 20px;
+    font-family: Frank Ruhl Libre;
+}
+
+body{
+    background-color: #F5EEF8;
+}
+
+h1{
+    font-family: Nosifer;
+    font-size: 50px;
+    text-align: center;
+}

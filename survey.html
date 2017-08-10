@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="css/survey.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Amita' rel='stylesheet' >
+    <link href='https://fonts.googleapis.com/css?family=Frank Ruhl Libre' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Nosifer' rel='stylesheet'>
+  <script src="js/jquery-3.2.1.js"></script>
+  <script src="js/survey.js"></script>
+  <title>Survey</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Survey</h1>
+
+        <!-- Survey Form-->
+        <form id="userInfo">
+            <div class="form-group">
+                <label for="born">Date of birth:</label>
+
+                <input id="born" class="form-control" type="date">
+            </div>
+            
+            <div class="form-group">
+
+                <label for="color">Which is your favourite color?</label>
+
+                <input id="color" class="form-control" type="color">
+            </div>
+
+            <div class="form-group">
+                <label for="beverage">Which is your favorite beverage?</label>
+
+                <select class="form-control" id="beverage">
+                <option>Coffee</option>
+                <option>Tea</option>
+                <option>Kombucha</option>
+                <option>Water</option>
+                </select>
+            </div>
+
+
+            <div class="form-group">
+                <label for="rules">Which is more important?</label>
+
+                <select class="form-control" id="rules">
+                    <option value="1">Logic</option>
+                    <option value="2">Emotion</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="band">Which is your favorite band?</label>
+
+                <select class="form-control" id="band">
+                    <option>The Beatles</option>
+                    <option>The Clash</option>
+                    <option>Poison</option>
+                    <option>Black Sabbath</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="flavor">Which is your favvorite Ice Cream flavor?</label>
+
+                <div class="radio">
+                    <label>
+                    <input type="radio" name="flavor" value="Chocolate" checked>
+                    Chocolate
+                    </label>
+                </div>
+
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="flavor" value="Vanilla">
+                        Vanilla
+                    </label>
+                </div>
+
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="flavor" value="Cookies & cream">
+                        Cookies & Cream
+                    </label>
+                </div>
+            </div>
+
+            <button type="submit" class="btn">Submit</button>
+
+        </form>    
+        <div id="story">
+            <p><span class="born"></span> is when the world received awesome you! <br/> <span class="color"></span> is the color that dominates your wardrobe. <br/> You can't surive without <span class="beverage"></span>. <br/> Life rule number <span class="rules"></span> is to rock out to classic rock by <span class="band"></span> while eating <span class="flavor"></span> icecream.</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
+
+
+        <!-- Selct Boxes -->
+<!--         <form id="selectBoxes1">
+            <select class="form-control" id="beverage1">
+                <option>Coffee</option>
+                <option>Tea</option>
+                <option>Kombucha</option>
+                <option>Water</option>
+            </select>
+            <button type="submit" class="btn">Submit</button>
+        </form>
+        <div id="outputSelectBoxes1">
+
+        </div> -->
+
+        <!-- Selct Boxes with Values for eash item -->
+   <!--      <form id="selectBoxes2">
+            <select class="form-control" id="beverage2">
+                <option value="1">Coffee</option>
+                <option value="2">Tea</option>
+                <option value="3">Kombucha</option>
+                <option value="4">Water</option>
+            </select>
+            <button type="submit" class="btn">Submit</button>
+        </form>
+        <div id="outputSelectBoxes2">
+
+        </div> -->
+
+        <!-- Radio Buttons -->
+<!--         <form id="radioButtons">
+
+            <div class="radio">
+                <label>
+                <input type="radio" name="flavor" value="Chocolate" checked>
+                Chocolate
+                </label>
+            </div>
+
+            <div class="radio">
+                <label>
+                    <input type="radio" name="flavor" value="Vanilla">
+                    Vanilla
+                </label>
+            </div>
+
+            <div class="radio">
+                <label>
+                    <input type="radio" name="flavor" value="Cookies & cream">
+                    Cookies & Cream
+                </label>
+            </div>
+
+            <button type="submit" class="btn">Submit</button>
+
+        </form>
+        <div id="outputRadioButtons">
+
+        </div> -->
