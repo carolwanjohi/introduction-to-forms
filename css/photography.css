@@ -1,0 +1,35 @@
+body{
+  font-family: fantasy;
+  background-color: #F9EBEA;
+}
+h1, h2,legend{
+  font-family: cursive;
+  font-weight: bold;
+  color: #F1948A;
+  text-align: center;
+}
+fieldset{
+  width: 47%;
+  margin: auto;
+  float: left;
+}
+img{
+  width: 47%;
+  border: 2px solid #f2d7d5;
+}
+.logo{
+  margin: 0 auto;
+  display: block;
+  height: 200px;
+}
+.portrait{
+  background-color: #fdedec;
+}
+
+@media screen and (min-width: 768px){
+.portrait  img, .nature img, .wedding img, .fashion img{
+   width: 220px;
+   float: left;
+   padding: 15px;
+ }
+}
