@@ -70,3 +70,13 @@ blockquote {
   background-color: #FDEDEC;
   text-align: center;
 }
+
+form{
+  background-color: #F9EBEA;
+  border: 2px solid #7b241c;
+  margin:0 auto;
+}
+
+#response{
+  display:none;
+}
