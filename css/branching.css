@@ -1,0 +1,88 @@
+#drinks, #under-21{
+    display: none;
+}
+
+/*Animate content in .ice-cream*/
+
+.ice-cream {
+  color: #922B21;
+  position: relative;
+  /* Chrome and Safari*/
+  -webkit-animation-name: ice-cream-animation;
+  -webkit-animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+  /*Firefox*/
+  -moz-animation-name: ice-cream-animation;
+  -moz-animation-duration: 4s;
+  -moz-animation-iteration-count: infinite;
+  /*Opera*/
+  -o-animation-name: ice-cream-animation;
+  -o-animation-duration: 4s;
+  -o-animation-iteration-count: infinite;
+  animation-name: ice-cream-animation;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+
+/*Chrome and Safari*/
+
+@-webkit-keyframes ice-cream-animation {
+  0% {
+    color: #922B21;
+  }
+  25% {
+    color: #B03A2E;
+  }
+  50% {
+    color: #76448A;
+  }
+  75% {
+    color: #6C3483;
+  }
+  100% {
+    color: #1F618D;
+  }
+}
+
+
+/*Fifefox*/
+
+@-moz-keyframes ice-cream-animation {
+  0% {
+    color: #922B21;
+  }
+  25% {
+    color: #B03A2E;
+  }
+  50% {
+    color: #76448A;
+  }
+  75% {
+    color: #6C3483;
+  }
+  100% {
+    color: #1F618D;
+  }
+}
+
+
+/*Opera*/
+
+@-o-keyframes ice-cream-animation {
+  0% {
+    color: #922B21;
+  }
+  25% {
+    color: #B03A2E;
+  }
+  50% {
+    color: #76448A;
+  }
+  75% {
+    color: #6C3483;
+  }
+  100% {
+    color: #1F618D;
+  }
+}
