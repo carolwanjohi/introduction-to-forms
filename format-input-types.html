@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="css/format-input-types.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-3.2.1.js"></script>
+  <script src="js/format-input-types.js"></script>
+  <title>Format Input Types Practice</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Format Input Types Practice</h1>
+
+        <!-- Selct Boxes -->
+        <form id="selectBoxes1">
+            <select class="form-control" id="beverage1">
+                <option>Coffee</option>
+                <option>Tea</option>
+                <option>Kombucha</option>
+                <option>Water</option>
+            </select>
+            <button type="submit" class="btn">Submit</button>
+        </form>
+        <div id="outputSelectBoxes1">
+
+        </div>
+
+        <!-- Selct Boxes with Values for eash item -->
+        <form id="selectBoxes2">
+            <select class="form-control" id="beverage2">
+                <option value="1">Coffee</option>
+                <option value="2">Tea</option>
+                <option value="3">Kombucha</option>
+                <option value="4">Water</option>
+            </select>
+            <button type="submit" class="btn">Submit</button>
+        </form>
+        <div id="outputSelectBoxes2">
+
+        </div>
+
+        <!-- Radio Buttons -->
+        <form id="radioButtons">
+
+            <div class="radio">
+                <label>
+                <input type="radio" name="flavor" value="Chocolate" checked>
+                Chocolate
+                </label>
+            </div>
+
+            <div class="radio">
+                <label>
+                    <input type="radio" name="flavor" value="Vanilla">
+                    Vanilla
+                </label>
+            </div>
+
+            <div class="radio">
+                <label>
+                    <input type="radio" name="flavor" value="Cookies & cream">
+                    Cookies & Cream
+                </label>
+            </div>
+
+            <button type="submit" class="btn">Submit</button>
+
+        </form>
+        <div id="outputRadioButtons">
+
+        </div>
+
+        <!-- Date and Color Form-->
+        <form id="dateForm">
+            <div class="form-group">
+                <label for="born">Date of birth:</label>
+                <input id="born" class="form-control" type="date">
+            </div>
+
+            <div class="form-group">
+                <label for="color">What is you favourite color?</label>
+                <input id="color" class="form-control" type="color">
+            </div>
+
+            <button type="submit" class="btn">Submit</button>
+
+        </form>    
+        <div id="info">
+            <p>Your date of birth is <span class="born"></span> and your favourite color is <span class="color"></span>. :)</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
