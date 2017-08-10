@@ -1,50 +1,82 @@
-/*Function to add 2 numbers*/
+//Back-end logic 
+
+//Function to add 2 numbers
 var add = function(number1, number2) {
   return number1 + number2
 };
 
-/*Function to subtract 2 numbers*/
+//Function to subtract 2 numbers
 var subtract = function(number1, number2) {
   return number1 - number2
 };
 
-/*Function to multiply 2 numbers*/
+//Function to multiply 2 numbers
 var multiply = function(number1, number2) {
   return number1 * number2
 };
 
-/*Function to divide 2 numbers*/
+//Function to divide 2 numbers
 var divide = function(number1, number2) {
   return number1 / number2
 };
 
-/*Ask user for number1*/
-var number1 = parseInt(prompt("Enter a number:"));
+//Front-end
 
-/*Ask user for number2*/
-var number2 = parseInt(prompt("Enter a another number:"));
+$(document).ready(function() {
+    //Addition form
+    $("form#add").submit(function(event){
+        event.preventDefault();
+        //Ask user for number1
+        var number1 = parseInt($("#add1").val());
+        //Ask user for number2
+        var number2 = parseInt($("#add2").val());
+        //Add 2 numbers
+        var result = add(number1, number2);
+        //Test
+        //alert(result);
+        $("#outputAdd").text(result);
+    });
 
-/*Add 2 numbers*/
-var resultAdd = add(number1, number2);
+    //Subtraction form
+    $("form#subtract").submit(function(event){
+        event.preventDefault();
+        //Ask user for number1
+        var number1 = parseInt($("#subtract1").val());
+        //Ask user for number2
+        var number2 = parseInt($("#subtract2").val());
+        //Add 2 numbers
+        var result = subtract(number1, number2);
+        //Test
+        //alert(result);
+        $("#outputSubtract").text(result);
+    });
 
-/*Display results*/
-alert(resultAdd);
-//
-// /*Subtract 2 numbers*/
-// var resultSubtract = subtract(number1, number2);
-//
-// /*Display results*/
-// alert(resultSubtract);
-//
-// /*Multiply 2 numbers*/
-// var resultMultiply = multiply(number1, number2);
-//
-// /*Display results*/
-// alert(resultMultiply);
-//
-//
-// /*Multiply 2 numbers*/
-// var resultDivide = divide(number1, number2);
-//
-// /*Display results*/
-// alert(resultDivide);
+    //Multiplication form
+    $("form#multiply").submit(function(event){
+        event.preventDefault();
+        //Ask user for number1
+        var number1 = parseInt($("#multiply1").val());
+        //Ask user for number2
+        var number2 = parseInt($("#multiply2").val());
+        //Add 2 numbers
+        var result = multiply(number1, number2);
+        //Test
+        //alert(result);
+        $("#outputMultiply").text(result);
+    });
+
+    //Division form
+    $("form#divide").submit(function(event){
+        event.preventDefault();
+        //Ask user for number1
+        var number1 = parseInt($("#divide1").val());
+        //Ask user for number2
+        var number2 = parseInt($("#divide2").val());
+        //Add 2 numbers
+        var result = divide(number1, number2);
+        //Test
+        //alert(result);
+        $("#outputDivide").text(result);
+    });
+
+});
